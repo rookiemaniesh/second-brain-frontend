@@ -5,7 +5,7 @@
     text:String;
     endIcon?:ReactElement;
     startIcon?:ReactElement;
-    onClick?:()=>void;
+    onclick?:()=>void;
 }
 const ButtonVariant={
     "primary":"bg-purple-800 text-purple-500",
@@ -21,6 +21,6 @@ const defaultStyle="rounded-md font-light m-2 flex items-center justify-center g
  const  Button=(props: ButtonProps)=>{
    
     
-    return<button className={`${ButtonVariant[props.variant]} ${ButtonSize[props.size]} ${defaultStyle}` } >{props.startIcon}{props.text}{props.endIcon}</button>
+    return<button onClick={props.onclick} className={`${ButtonVariant[props.variant]} ${ButtonSize[props.size]} ${defaultStyle} ` } >{props.startIcon}{props.text}{props.endIcon}</button>
  }
  export default Button
