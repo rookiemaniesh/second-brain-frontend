@@ -63,7 +63,7 @@ const EmbedPreview = ({ type, link }: { type: CardProps["type"]; link: string })
 
 export const Card=(props:CardProps)=>{
 
-    return <div className="bg-white p-4 rounded-lg max-w-80 border-2 inset-shadow-grey-300 border-grey-300">
+    return <div className="bg-white p-4 rounded-lg max-w-100 border-2 inset-shadow-grey-300 border-grey-300">
     <div className="flex items-center justify-between">
        <div className="flex items-center gap-2 text-grey-500 text-2xl font-bold">
        {cardType[props.type] }

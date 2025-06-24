@@ -57,7 +57,7 @@ export function CreateModal({ open, onClose }: { open: boolean; onClose: () => v
   );
 }
 
-const Input = ({onChange,placeholder}:{onChange:()=>void,placeholder:String}) => {
+export const Input = ({onChange,placeholder}:{onChange:()=>void,placeholder:String}) => {
   return (
     <input
       className="p-4 rounded-md border border-gray-300 w-full mb-4"
